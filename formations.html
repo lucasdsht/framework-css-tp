@@ -3,8 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formations</title>
+  <title>Contact</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .form-input, .form-textarea {
+      border: none;
+      border-bottom: 2px solid #3b82f6;
+      outline: none;
+      padding: 0.5rem;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .form-input::placeholder, .form-textarea::placeholder {
+      color: #94a3b8;
+    }
+    .form-textarea {
+      resize: none;
+    }
+    .submit-button {
+      background-color: #1d4ed8;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      text-transform: uppercase;
+    }
+    .submit-button:hover {
+      background-color: #2563eb;
+    }
+  </style>
 </head>
 <body class="bg-gray-100">
   <header class="bg-gray-200 py-2">
@@ -20,60 +49,46 @@
       </nav>
     </div>
   </header>
-  <div class="max-w-screen-lg mx-auto px-8">
-    <h1 class="text-center text-3xl font-bold my-16">Nos formations</h1>
-    <div class="grid grid-cols-4 gap-4 mb-16">
-      <div class="relative">
-        <img src="https://picsum.photos/300/300?random=1" alt="Formation 1" class="w-full h-auto rounded-lg">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="custom-shape w-16 h-16"></div>
+  <div class="max-w-screen-lg mx-auto px-8 py-16">
+    <h1 class="text-center text-3xl font-bold mb-8">Tu veux nous contacter ?</h1>
+    <div class="grid grid-cols-2 gap-8">
+      <div>
+        <form class="space-y-4">
+          <div>
+            <label for="nom" class="sr-only">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Nom" required class="form-input">
+          </div>
+          <div>
+            <label for="prenom" class="sr-only">Prenom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Prenom" required class="form-input">
+          </div>
+          <div>
+            <label for="telephone" class="sr-only">Telephone</label>
+            <input type="text" id="telephone" name="telephone" placeholder="Telephone" required class="form-input">
+          </div>
+          <div>
+            <label for="email" class="sr-only">Mail</label>
+            <input type="email" id="email" name="email" placeholder="Mail" required class="form-input">
+          </div>
+          <div>
+            <label for="message" class="sr-only">Message</label>
+            <textarea id="message" name="message" placeholder="Message" required class="form-textarea h-32"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="submit-button">Envoyer</button>
+          </div>
+        </form>
+      </div>
+      <div class="space-y-4">
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.6394097428653!2d3.0527359159396974!3d50.633608679501106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d56d74c87767%3A0x79f6c63c96dd4207!2s57%20Rue%20Pierre%20Mauroy%2C%2059800%20Lille%2C%20France!5e0!3m2!1sen!2sus!4v1595321364917!5m2!1sen!2sus" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="text-lg">
+          <p>57 Rue Pierre Mauroy</p>
+          <p>03 20 10 10 10</p>
+          <p>59800 Lille, France</p>
         </div>
       </div>
-      <div class="relative">
-        <img src="https://picsum.photos/300/300?random=2" alt="Formation 2" class="w-full h-auto rounded-lg">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="custom-shape w-16 h-16"></div>
-        </div>
-      </div>
-      <div class="relative">
-        <img src="https://picsum.photos/300/300?random=3" alt="Formation 3" class="w-full h-auto rounded-lg">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="custom-shape w-16 h-16"></div>
-        </div>
-      </div>
-      <div class="relative">
-        <img src="https://picsum.photos/300/300?random=4" alt="Formation 4" class="w-full h-auto rounded-lg">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="custom-shape w-16 h-16"></div>
-        </div>
-      </div>
-      <div class="relative">
-        <img src="https://picsum.photos/300/300?random=5" alt="Formation 5" class="w-full h-auto rounded-lg">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="custom-shape w-16 h-16"></div>
-        </div>
-      </div>
-      <div class="relative">
-        <img src="https://picsum.photos/300/300?random=6" alt="Formation 6" class="w-full h-auto rounded-lg">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="custom-shape w-16 h-16"></div>
-        </div>
-      </div>
-      <div class="relative">
-        <img src="https://picsum.photos/300/300?random=7" alt="Formation 7" class="w-full h-auto rounded-lg">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="custom-shape w-16 h-16"></div>
-        </div>
-      </div>
-      <div class="relative">
-        <img src="https://picsum.photos/300/300?random=8" alt="Formation 8" class="w-full h-auto rounded-lg">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="custom-shape w-16 h-16"></div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center max-w-prose mx-auto">
-      <p class="text-2xl leading-relaxed">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auc tor ornare leo, non suscipit magna interdum eu. Cura bitur pellentesque nibh nibh, at maximus ante.</p>
     </div>
   </div>
   <footer class="bg-gray-800 text-white py-8 mt-16">
